@@ -1,7 +1,6 @@
 # January 24, 2022: Stack and Heap
 
-!!! abstract
-    Overview: We will understand where variables go in memory.
+> Overview: We will understand where variables go in memory.
 
 ## Before the Lecture
 
@@ -68,8 +67,6 @@ char str[] = "ayo";
 - **stack frames**: C technique where it stores function calls and function-related stack clods of memory in a LIFO manner, where the stack proceeds downwards for new function calls
   - Let's say main(int a, int b) calls averageNum(int a, int b) which calls addNum(int a, int b). The stack will look like this. When addNum() is finished, it gets removed from the bottom of the stack.
 
-*[LIFO]: Last in First Out
-
 | main           | int a, int b |
 |-              |-              |
 | averageNum    | int a, int b|
@@ -94,6 +91,7 @@ char str[] = "ayo";
 - size is always in bytes
   - i.e. `int *scores = malloc(20 * sizeof(int)); // allocate array of 20 ints`
   - if malloc returns `NULL`, there wasn't enough memory for the request
+  - returns pointer to block of heap memory
 
 ### calloc
 
@@ -101,10 +99,11 @@ char str[] = "ayo";
 
 - like malloc, except it takes two parameters and also zeros the memory for you!
 - looks like it also does the multiplication for you
+- returns pointer to block of heap memory
 
 ### realloc
 
-> `void *realloc(void *ptr, size_t size)`
+> `void *realloc(void *ptr, size_t newSize)`
 
 - takes `ptr` you have already passed in and sometimes gives you more space
 - returns ptr to new memory (through void or original ptr?)
