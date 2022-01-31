@@ -32,7 +32,7 @@
     - To subtract: convert number to its twos complement version, then add
     - To multiply: multiply, throw away excess digits
 
-![Two's Complement Circle. If the first bit is 0, it's negative.](twoscomplement.png)
+<img title="" src="twoscomplement.png" alt="Two's Complement Circle. If the first bit is 0, it's negative." width="448">
 
 You can cast between signed and unsigned!
 

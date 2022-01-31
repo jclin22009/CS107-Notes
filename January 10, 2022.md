@@ -29,7 +29,7 @@
 
 ## Data Sizes
 
-![Data Sizes](datasizes.png)
+<img title="" src="datasizes.png" alt="Data Sizes" width="467">
 
 ## Boolean Algebra
 

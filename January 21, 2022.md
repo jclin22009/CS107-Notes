@@ -39,7 +39,7 @@ ptr[0]; // segfault
 - **arrays**: continuous blocks in memory with fixed length.
   - If it's an array of ints, arr[2] returns 8 bytes down (because ints are 4 bytes each)
   - so to find number of elements in an array:
-`int nelems = sizeof(values) / sizeof(values[0]));`
+    `int nelems = sizeof(values) / sizeof(values[0]));`
 - arrays _ARE NOT_ pointers! You cannot reassign arrays, but you can reassign pointers. However, you can reassign blocks within an array to certain pointer addresses.
 - `arr` is the same as `arr[0]`, and it gives the first value of the array
 - `int *arrptr = arr;`

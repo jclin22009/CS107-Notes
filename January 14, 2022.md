@@ -1,7 +1,7 @@
 # January 14, 2022: Strings and Chars
 
 > "As it turns out..."
->
+> 
 > – Chris Greggs, 2022
 
 ## char
@@ -36,4 +36,4 @@
   - `char *strcat(char *dst, char *src)` concatenates two strings by appending src onto the end of dst. Dst is always null-terminated! So make sure there's enough space
   - `char *strncat(char *dst, char *src, int n)` copies n characters of src to dst
 
-![str apple pointers](stringpointers.png)
+<img title="" src="stringpointers.png" alt="str apple pointers" width="331">

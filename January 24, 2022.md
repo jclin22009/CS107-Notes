@@ -7,7 +7,7 @@
 ### Double Pointers
 
 > Q: Why do we use double pointers?
->
+> 
 > A: So our functions can modify original parameters passed into the function.
 
 ```c
@@ -67,10 +67,10 @@ char str[] = "ayo";
 - **stack frames**: C technique where it stores function calls and function-related stack clods of memory in a LIFO manner, where the stack proceeds downwards for new function calls
   - Let's say main(int a, int b) calls averageNum(int a, int b) which calls addNum(int a, int b). The stack will look like this. When addNum() is finished, it gets removed from the bottom of the stack.
 
-| main           | int a, int b |
-|-              |-              |
-| averageNum    | int a, int b|
-| addNum | int a, int b|
+| main       | int a, int b |
+| ---------- | ------------ |
+| averageNum | int a, int b |
+| addNum     | int a, int b |
 
 - stack allocation, with this system of **stack frames**, is:
   - convenient and fast. Think of the stack as scratch space, where the program can jot down things and trash it when it's done (like a pad of LIFO sticky notes).
@@ -86,7 +86,7 @@ char str[] = "ayo";
 
 ### malloc
 
->`void *malloc (size_t size)`
+> `void *malloc (size_t size)`
 
 - size is always in bytes
   - i.e. `int *scores = malloc(20 * sizeof(int)); // allocate array of 20 ints`
@@ -95,7 +95,7 @@ char str[] = "ayo";
 
 ### calloc
 
->`void *calloc(size_t nmemb, size_t size)`
+> `void *calloc(size_t nmemb, size_t size)`
 
 - like malloc, except it takes two parameters and also zeros the memory for you!
 - looks like it also does the multiplication for you
