@@ -67,7 +67,7 @@ int main2(int argc, char **argv) {
 - **Very important:** Generic implementation of getting `ith` element of a `void*`:
 
 ```c
-for (size t i=0; i < nelems; i++) {
+for (size_t i = 0; i < nelems; i++) {
     // get ith element
     void *ith = (char*) arr + i * width;
 }

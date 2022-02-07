@@ -1,6 +1,6 @@
 # January 31, 2022: More Void* Stuff
 
-> Midterm is on Tuesday, and it's probably going to be a website where you fill it out.
+> Midterm is on Tuesday, and it's probitably going to be a website where you fill it out.
 > 
 > Generics, etc. are going to be on the midterm
 
