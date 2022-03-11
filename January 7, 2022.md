@@ -50,7 +50,7 @@ uy = (unsigned) ty;
 - `%d`: signed; `%u`: unsigned (for `printf`)
   - `%s` strings, `%zu` pointers
 - when comparing signed and unsigned numbers, C turns the signed to unsigned (so don't do this!)
-- `sizeOf` reveals how many bytes each data type uses
+- `sizeof` reveals how many bytes each data type uses
 
 ![Because we now know how bit patterns for integers works, we can figure out the maximum and minimum values, designated by INT MAX, UINT MAX, INT MIN, (etc.), which are defined in limits.h](minmaxvalues.png)
 

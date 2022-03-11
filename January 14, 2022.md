@@ -17,7 +17,7 @@
   - ∴ there's no way to put `\0` into a string in C... (?)
   - to declare, `char *str = "apple"`
   - referenced by a _pointer_ to its first character
-  - it is meanigless to compare strings by their pointer values -- make sure you compare the _values_, not the pointers (and write the function itself)!
+  - it is meaningless to compare strings by their pointer values -- make sure you compare the _values_, not the pointers (and write the function itself)!
   - char* is a NUMBER that is a pointer. If you follow that NUMBER pointer, you get the value.
   - assigning string pointer to another string pointer makes two pointers to the same thing, not 2 duplicates!
   - to dereference pointer, call upon *str and get value (like in C++)!
